@@ -1,5 +1,7 @@
 import streamlit as st
 
+wave_img = ImageTk.PhotoImage(Image.open("wave1.png"))
+
 #need photos
 st.set_page_config(page_title="Experimental Webpage", page_icon=":tada:", layout="wide")
 
