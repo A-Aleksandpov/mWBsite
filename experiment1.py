@@ -30,8 +30,6 @@ with st.container():
             - are working with Excel and found themselves thinking - "there has to be a better way."
            """
         )
-    with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
 
  
 # ---- CONTACT ----
@@ -49,8 +47,3 @@ with st.container():
         <button type="submit">Send</button>
     </form>
     """
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.markdown(contact_form, unsafe_allow_html=True)
-    with right_column:
-        st.empty()
