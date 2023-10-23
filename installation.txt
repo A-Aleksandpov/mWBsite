@@ -1,5 +1,10 @@
 pip install streamlit
+pip install --upgrade streamlit
 pip install requests
+pip install --upgrade requests
 pip install Pillow
+pip install --upgrade Pillow
 pip install protobuf
+pip install --upgrade protobuf
 pip install watchdog
+pip install --upgrade watchdog
