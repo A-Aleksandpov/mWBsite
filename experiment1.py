@@ -28,7 +28,7 @@ with st.container():
             - I am interested in all possible areas where this language can be applied, in particular, data science and machine learning. I am open to learning new technologies.
             - Touching and participating in the development of large and interesting projects is what really got me interested in programming. I am focused on solving problems and implementing quality and beautiful code using modern design standards.
             - Soft skills: multitasking, teamwork, time management.
-            - My main focus is Python; SQL; Django; Pytorch; Pyspark; MLflow; Golang, Matplotlib, Numpy, Scipy, Streamlit, Random, Tkinter, PyQt5, math, pandas, sklearn, seaborn."
+            - My main focus is Python; SQL; Django; Pytorch; Pyspark; MLflow; Golang, Matplotlib, Numpy, Scipy, Streamlit, Random, Tkinter, PyQt5, math, pandas, sklearn, seaborn.
            """
         )
 
@@ -55,8 +55,10 @@ with st.container():
             * 3D snake with ursina and random modules.
             * Gaming machine with the help of random module.
 
-                    Skills and abilities
-            * Project management: Github;
+                    Skills and abilities:
+            * Project management: Github.
+            * Work with large volumes of information.
+            * Data analysis.
             Text editors and integrated development environment: Microsoft Word, MS Visual Studio Code, docker, MS Office.
 
            """
@@ -79,7 +81,7 @@ with st.container():
             - are looking for a way to leverage the power of Python in their day-to-day work.
             - are struggling with repetitive tasks in Excel and are looking for a way to use Python.
             - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-            - are working with Excel and found themselves thinking - "there has to be a better way."
+            - are working with Excel and found themselves thinking - "there has to be a better way.
            """
         )
 
