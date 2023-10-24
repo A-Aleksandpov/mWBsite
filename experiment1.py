@@ -118,7 +118,7 @@ with st.container():
 #credentials = service_account.Credentials.from_service_account_file(
 #    '75d1d1a02500190a221b373cde6eb0a6140f3396',
  #   scopes=['https://www.googleapis.com/auth/analytics.readonly']
-)
+#)
 
 # Create a Google Analytics service object
 #service = build('analyticsreporting', 'v4', credentials=credentials)
