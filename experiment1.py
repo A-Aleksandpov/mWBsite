@@ -1,6 +1,8 @@
 import requests
 import streamlit as st
 from PIL import Image
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
 
 #doesnt work with currect free website
 #wave_img = ImageTk.PhotoImage(Image.open("wave1.png"))
@@ -108,12 +110,36 @@ with st.container():
         st.empty()
 
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN3G7DEJLL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QN3G7DEJLL');
-</script>
+# Set your Google Analytics VIEW_ID
+VIEW_ID = 'G-QN3G7DEJLL'
+
+# Set up OAuth2 credentials
+credentials = service_account.Credentials.from_service_account_file(
+    '75d1d1a02500190a221b373cde6eb0a6140f3396',
+    scopes=['https://www.googleapis.com/auth/analytics.readonly']
+)
+
+# Create a Google Analytics service object
+service = build('analyticsreporting', 'v4', credentials=credentials)
+
+# Query Google Analytics for website visitor data
+def get_website_traffic():
+    response = service.reports().batchGet(
+        body={
+            'reportRequests': [
+                {
+                    'viewId': VIEW_ID,
+                    'dateRanges': [{'startDate': '7daysAgo', 'endDate': 'today'}],
+                    'metrics': [{'expression': 'ga:sessions'}],
+                    'dimensions': [{'name': 'ga:country'}]
+                }
+            ]
+        }
+    ).execute()
+
+    return response
+
+if __name__ == '__main__':
+    website_traffic_data = get_website_traffic()
+    print(website_traffic_data)
