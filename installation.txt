@@ -8,3 +8,6 @@ pip install protobuf
 pip install --upgrade protobuf
 pip install watchdog
 pip install --upgrade watchdog
+pip install google-api-python-client
+pip install google-auth-httplib2
+pip install google-auth-oauthlib
