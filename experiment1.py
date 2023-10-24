@@ -85,7 +85,7 @@ with st.container():
            """
         )
 
- 
+# just for myself <textarea name="message" placeholder="Your message here" required></textarea>
 # ---- CONTACT ----
 with st.container():
     st.write("---")
@@ -98,7 +98,6 @@ with st.container():
         <input type="text" name="name" placeholder="Your name" required>
         <input type="email" name="email" placeholder="Your email" required>
         <input type="message" name="message" placeholder="Your message here" required>
-        #<textarea name="message" placeholder="Your message here" required></textarea>
         <button type="submit">Send</button>
     </form>
     """
